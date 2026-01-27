@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OG Image Generator - CarELBL</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #f3f4f6;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .preview {
+      width: 1200px;
+      height: 630px;
+      background: #0a0a0a;
+      position: relative;
+      margin: 20px auto;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .content {
+      text-align: center;
+    }
+    .brand {
+      font-size: 68px;
+      font-weight: 300;
+      color: white;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    .accent-line {
+      width: 800px;
+      height: 2px;
+      background: linear-gradient(90deg, #3b82f6 0%, #60a5fa 100%);
+      margin: 50px auto;
+      opacity: 0.4;
+    }
+    .car-spa {
+      font-size: 42px;
+      font-weight: 300;
+      color: #3b82f6;
+      letter-spacing: 4px;
+    }
+    .instructions {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px auto;
+      max-width: 800px;
+    }
+    .instructions h2 {
+      margin-top: 0;
+      color: #1a1a1a;
+    }
+    .instructions ol {
+      line-height: 1.8;
+    }
+    .instructions code {
+      background: #f3f4f6;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+    button {
+      background: #3b82f6;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    button:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="instructions">
+      <h2>📸 Generate OG Image for Social Sharing</h2>
+      <p>This page displays the preview image for social sharing (WhatsApp, Facebook, etc.).</p>
+      <p><strong>To create the PNG file:</strong></p>
+      <ol>
+        <li>Open this page in your browser</li>
+        <li>Use browser DevTools (F12) or a screenshot tool to capture the preview below</li>
+        <li>Or use the button below to download (requires modern browser)</li>
+        <li>Save as <code>og-image.png</code> in the <code>public</code> folder</li>
+        <li>Update <code>index.html</code> to use <code>/og-image.png</code> instead of <code>/og-image.svg</code></li>
+      </ol>
+      <button onclick="downloadImage()">Download as PNG</button>
+      <button onclick="copyImage()">Copy to Clipboard</button>
+    </div>
+
+    <div class="preview" id="preview">
+      <div class="content">
+        <h1 class="brand">CarELBL Autopflege</h1>
+        <div class="accent-line"></div>
+        <div class="car-spa">CAR SPA · Wien 1010</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    async function downloadImage() {
+      try {
+        const preview = document.getElementById('preview');
+
+        // Use html2canvas if available, otherwise provide instructions
+        if (typeof html2canvas === 'undefined') {
+          alert('For automatic download, you need html2canvas library.\n\nAlternatively:\n1. Right-click the preview image\n2. Select "Screenshot Node" in DevTools\n3. Or use any screenshot tool to capture the preview area');
+          return;
+        }
+
+        const canvas = await html2canvas(preview, {
+          width: 1200,
+          height: 630,
+          scale: 1,
+          backgroundColor: null
+        });
+
+        canvas.toBlob((blob) => {
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'og-image.png';
+          a.click();
+          URL.revokeObjectURL(url);
+        });
+      } catch (error) {
+        console.error('Error generating image:', error);
+        alert('Please use a screenshot tool or browser DevTools to capture the preview.');
+      }
+    }
+
+    async function copyImage() {
+      alert('Use browser DevTools (F12):\n1. Right-click on the preview\n2. Select "Capture node screenshot"\n\nOr use a screenshot tool like Snipping Tool (Windows) or Screenshot app (Mac)');
+    }
+  </script>
+</body>
+</html>
