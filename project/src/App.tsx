@@ -73,7 +73,7 @@ function App() {
               </p>
               <div>
                 <a
-                  href="https://carwash-booking.onrender.com/"
+                  href="https://booking.carelbl.at/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 rounded-full font-medium hover:bg-gray-100 transition"
@@ -216,7 +216,7 @@ function App() {
               {t.booking.subtitle}
             </p>
             <a
-              href="https://carwash-booking.onrender.com/"
+              href="https://booking.carelbl.at/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-10 py-4 bg-gray-900 text-white rounded-full font-medium hover:bg-gray-800 transition text-lg"
