@@ -103,7 +103,7 @@ function App() {
                 <p className="text-gray-600 leading-relaxed mb-6">
                   {t.about.desc1}
                 </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed whitespace-pre-line">
                   {t.about.desc2}
                 </p>
               </div>
@@ -270,15 +270,15 @@ function App() {
 
               <div className="bg-gray-200 rounded-2xl overflow-hidden h-[500px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2658.823907731413!2d16.377246776726768!3d48.21000764611557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDjCsDEyJzM2LjAiTiAxNsKwMjInNDcuNCJF!5e0!3m2!1sru!2sat!4v1769624056551!5m2!1sru!2sat"
+                  src="https://www.google.com/maps?q=48.21000764611557,16.377246776726768&z=18&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="CarELBL Autopflege – Einfahrt Dominikanerbaste"
-                />              
+                  title="CarELBL Autopflege – Einfahrt Dominikanerbastei"
+                />
               </div>
             </div>
           </div>
