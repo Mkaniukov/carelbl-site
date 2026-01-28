@@ -270,7 +270,7 @@ function App() {
 
               <div className="bg-gray-200 rounded-2xl overflow-hidden h-[500px]">
                 <iframe
-                  src="https://www.google.com/maps?q=48.21000764611557,16.377246776726768&z=18&output=embed"
+                  src="https://www.google.com/maps?q=48.21,16.379833&z=18&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
