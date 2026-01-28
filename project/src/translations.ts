@@ -90,7 +90,7 @@ export const translations = {
     about: {
       title: 'Premium Autopflege im Herzen Wiens',
       desc1: 'Professionelle Außen- und Innenreinigung mit hochwertigen Produkten und erfahrenem Team.',
-      desc2: 'Zentral gelegen in der Garage Alte Post, 1010 Wien. Mo–Fr 7:30–18:00 Uhr.',
+      desc2: 'Zentral gelegen in der Garage Posthöfen, 1010 Wien. \nMo–Fr 7:30–18:00 Uhr.',
     },
     booking: {
       title: 'Terminvereinbarung',
@@ -106,7 +106,7 @@ export const translations = {
       email: 'E-Mail',
       hours: 'Öffnungszeiten',
       hoursDetail: 'Mo–Fr 7:30–18:00 Uhr',
-      hoursNote: 'Sonn- und Feiertage keine Autowäsche',
+      hoursNote: 'Samstag, Sonntag und Feiertage keine Autowäsche',
     },
     footer: {
       rights: 'Alle Rechte vorbehalten',
@@ -202,7 +202,7 @@ export const translations = {
     about: {
       title: 'Premium Car Care in the Heart of Vienna',
       desc1: 'Professional exterior and interior cleaning with high-quality products and an experienced team.',
-      desc2: 'Centrally located in Garage Alte Post, 1010 Vienna. Mon–Fri 7:30 AM–6:00 PM.',
+      desc2: 'Centrally located in Garage Posthöfe, 1010 Vienna.\nАMon–Fri 7:30 AM–6:00 PM.',
     },
     booking: {
       title: 'Appointment Booking',
@@ -218,7 +218,7 @@ export const translations = {
       email: 'Email',
       hours: 'Opening Hours',
       hoursDetail: 'Mon–Fri 7:30 AM–6:00 PM',
-      hoursNote: 'No car wash on Sundays and public holidays',
+      hoursNote: 'No car wash on Saturday, Sundays and public holidays',
     },
     footer: {
       rights: 'All rights reserved',
