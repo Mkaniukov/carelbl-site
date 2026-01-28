@@ -69,7 +69,7 @@ function App() {
                 {t.hero.title}
               </h1>
               <p className="text-lg text-gray-300 mb-12 max-w-xl font-light leading-relaxed">
-                Garage Alte Post · Postgasse 10, 1010 Wien
+                Garage Posthöfe · Einfahrt Dominikanerbastei 11, 1010 Wien
               </p>
               <div>
                 <a
@@ -240,7 +240,9 @@ function App() {
                     </h3>
                     <p className="text-lg text-gray-900">
                       {t.contact.addressLine1}<br />
-                      {t.contact.addressLine2}
+                      <span className="font-semibold">
+                        {t.contact.addressLine2}
+                      </span>
                     </p>
                   </div>
 

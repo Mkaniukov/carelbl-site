@@ -101,7 +101,7 @@ export const translations = {
       title: 'Kontakt & Standort',
       address: 'Adresse',
       addressLine1: 'Postgasse 10, 1010 Wien',
-      addressLine2: 'Einfahrt: Dominikanerbastei 13',
+      addressLine2: 'Einfahrt: Dominikanerbastei 11',
       phone: 'Telefon',
       email: 'E-Mail',
       hours: 'Öffnungszeiten',
