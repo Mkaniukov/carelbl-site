@@ -202,7 +202,7 @@ export const translations = {
     about: {
       title: 'Premium Car Care in the Heart of Vienna',
       desc1: 'Professional exterior and interior cleaning with high-quality products and an experienced team.',
-      desc2: 'Centrally located in Garage Posthöfe, 1010 Vienna.\nАMon–Fri 7:30 AM–6:00 PM.',
+      desc2: 'Centrally located in Garage Posthöfe, 1010 Vienna.\nMon–Fri 7:30 AM–6:00 PM.',
     },
     booking: {
       title: 'Appointment Booking',

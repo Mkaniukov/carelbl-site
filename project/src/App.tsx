@@ -212,9 +212,10 @@ function App() {
             <h2 className="text-4xl sm:text-5xl font-light text-gray-900 mb-6 tracking-tight">
               {t.booking.title}
             </h2>
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto whitespace-pre-line">
               {t.booking.subtitle}
             </p>
+
             <a
               href="https://booking.carelbl.at/"
               target="_blank"
@@ -269,15 +270,15 @@ function App() {
 
               <div className="bg-gray-200 rounded-2xl overflow-hidden h-[500px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.1!2d16.3738!3d48.2082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d079e5136cb9d%3A0x1e4ca5d8aebe8b83!2sPostgasse%2010%2C%201010%20Wien%2C%20Austria!5e0!3m2!1sen!2s!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2658.823907731413!2d16.377246776726768!3d48.21000764611557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDjCsDEyJzM2LjAiTiAxNsKwMjInNDcuNCJF!5e0!3m2!1sru!2sat!4v1769624056551!5m2!1sru!2sat"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="CAR SPA Location"
-                ></iframe>
+                  title="CarELBL Autopflege – Einfahrt Dominikanerbaste"
+                />              
               </div>
             </div>
           </div>
