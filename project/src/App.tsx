@@ -287,12 +287,17 @@ function App() {
 
       <footer className="bg-white border-t border-gray-200 py-16">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-8">
             <div className="flex items-center flex-shrink-0">
               <img src="/logo_t.png" alt="CarELBL Autopflege" className="h-16 sm:h-18 w-auto flex-shrink-0" />
             </div>
-            <div className="text-sm text-gray-500">
-              <p>© {new Date().getFullYear()} Parkhaus Elbl. {t.footer.rights}</p>
+            <div className="text-sm text-gray-500 space-y-1">
+              <p className="font-medium text-gray-700">{t.footer.company}</p>
+              <p>{t.footer.address}</p>
+              <p>{t.footer.firmenbuchnummer}: 194916t</p>
+              <p>{t.footer.uid}: ATU56298116</p>
+              <p>{t.footer.dvr}: 1057511</p>
+              <p className="pt-2">© {new Date().getFullYear()} Parkhaus Elbl. {t.footer.rights}</p>
             </div>
           </div>
         </div>

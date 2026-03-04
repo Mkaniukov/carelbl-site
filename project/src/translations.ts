@@ -90,7 +90,7 @@ export const translations = {
     about: {
       title: 'Premium Autopflege im Herzen Wiens',
       desc1: 'Professionelle Außen- und Innenreinigung mit hochwertigen Produkten und erfahrenem Team.',
-      desc2: 'Zentral gelegen in der Garage Posthöfen, 1010 Wien. \nMo–Fr 7:30–18:00 Uhr.',
+      desc2: 'Zentral gelegen in der Garage Posthöfen, 1010 Wien. \nMo–Do 8:00–17:00 Uhr, Fr 8:00–16:00 Uhr.',
     },
     booking: {
       title: 'Terminvereinbarung',
@@ -105,12 +105,17 @@ export const translations = {
       phone: 'Telefon',
       email: 'E-Mail',
       hours: 'Öffnungszeiten',
-      hoursDetail: 'Mo–Fr 7:30–18:00 Uhr',
+      hoursDetail: 'Mo–Do 8:00–17:00 Uhr, Fr 8:00–16:00 Uhr',
       hoursNote: 'Samstag, Sonntag und Feiertage keine Autowäsche',
     },
     footer: {
       rights: 'Alle Rechte vorbehalten',
       tagline: 'Waschen · Saugen · Pflegen',
+      company: 'PARKHAUS ELBL Betriebsgesellschaft m.b.H.',
+      address: 'A-1010 Wien, Seitenstettengasse 5/15',
+      firmenbuchnummer: 'Firmenbuchnummer',
+      uid: 'UID-Nummer',
+      dvr: 'DVR Nummer',
     },
   },
   en: {
@@ -202,7 +207,7 @@ export const translations = {
     about: {
       title: 'Premium Car Care in the Heart of Vienna',
       desc1: 'Professional exterior and interior cleaning with high-quality products and an experienced team.',
-      desc2: 'Centrally located in Garage Posthöfe, 1010 Vienna.\nMon–Fri 7:30 AM–6:00 PM.',
+      desc2: 'Centrally located in Garage Posthöfe, 1010 Vienna.\nMon–Thu 8:00 AM–5:00 PM, Fri 8:00 AM–4:00 PM.',
     },
     booking: {
       title: 'Appointment Booking',
@@ -217,12 +222,17 @@ export const translations = {
       phone: 'Phone',
       email: 'Email',
       hours: 'Opening Hours',
-      hoursDetail: 'Mon–Fri 7:30 AM–6:00 PM',
+      hoursDetail: 'Mon–Thu 8:00 AM–5:00 PM, Fri 8:00 AM–4:00 PM',
       hoursNote: 'No car wash on Saturday, Sundays and public holidays',
     },
     footer: {
       rights: 'All rights reserved',
       tagline: 'Wash · Vacuum · Care',
+      company: 'PARKHAUS ELBL Betriebsgesellschaft m.b.H.',
+      address: 'A-1010 Vienna, Seitenstettengasse 5/15',
+      firmenbuchnummer: 'Company register no.',
+      uid: 'VAT ID',
+      dvr: 'DVR No.',
     },
   },
 };
