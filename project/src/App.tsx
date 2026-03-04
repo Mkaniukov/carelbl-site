@@ -24,10 +24,10 @@ function App() {
           </div>
 
           <div className="flex items-center space-x-4 md:space-x-10">
-            <button onClick={() => scrollToSection('services')} className="hidden md:block text-sm text-gray-600 hover:text-gray-900 transition">
+            <button onClick={() => scrollToSection('services')} className="hidden md:block text-sm text-stone-600 hover:text-stone-900 transition">
               {t.nav.services}
             </button>
-            <button onClick={() => scrollToSection('contact')} className="hidden md:block text-sm text-gray-600 hover:text-gray-900 transition">
+            <button onClick={() => scrollToSection('contact')} className="hidden md:block text-sm text-stone-600 hover:text-stone-900 transition">
               {t.nav.contact}
             </button>
             <div className="flex items-center space-x-1">
@@ -50,25 +50,25 @@ function App() {
       </header>
 
       <main className="pt-20">
-        <section className="relative bg-gray-900 text-white min-h-[85vh] flex items-center overflow-hidden">
+        <section className="relative bg-slate-700 text-white min-h-[85vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img
               src="/hero copy.jpg"
               alt="Professional car detailing"
-              className="w-full h-full object-cover opacity-50"
+              className="w-full h-full object-cover opacity-55"
               loading="eager"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-gray-900/60 via-gray-900/50 to-gray-900/70"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-slate-800/55 via-slate-700/40 to-slate-800/60"></div>
           </div>
           <div className="max-w-7xl mx-auto px-6 lg:px-8 relative w-full py-24">
             <div className="max-w-3xl">
-              <p className="text-sm uppercase tracking-[0.2em] text-gray-300 mb-6 font-medium">
+              <p className="text-sm uppercase tracking-[0.2em] text-slate-300 mb-6 font-medium">
                 {t.hero.subtitle}
               </p>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light mb-8 leading-[1.1] tracking-tight">
                 {t.hero.title}
               </h1>
-              <p className="text-lg text-gray-300 mb-12 max-w-xl font-light leading-relaxed">
+              <p className="text-lg text-slate-300 mb-12 max-w-xl font-light leading-relaxed">
                 Garage Posthöfe · Einfahrt Dominikanerbastei 11, 1010 Wien
               </p>
               <div>
@@ -76,7 +76,7 @@ function App() {
                   href="https://booking.carelbl.at/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 rounded-full font-medium hover:bg-gray-100 transition"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-slate-700 rounded-full font-medium hover:bg-stone-100 transition"
                 >
                   {t.hero.bookNow}
                 </a>
@@ -111,14 +111,14 @@ function App() {
           </div>
         </section>
 
-        <section id="services" className="py-16 bg-gray-50">
+        <section id="services" className="py-16 bg-stone-50">
           <div className="max-w-5xl mx-auto px-6 lg:px-8">
             <h2 className="text-4xl sm:text-5xl font-light text-gray-900 mb-12 text-center tracking-tight">
               {t.services.title}
             </h2>
 
-            <div className="space-y-0 bg-white rounded-2xl overflow-hidden">
-              <div className="border-b border-gray-100 p-8 hover:bg-gray-50/50 transition">
+            <div className="space-y-0 bg-white rounded-2xl overflow-hidden shadow-sm">
+              <div className="border-b border-stone-100 p-8 hover:bg-stone-50/60 transition">
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <h3 className="text-xl font-medium text-gray-900 mb-2">
@@ -133,7 +133,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="border-b border-gray-100 p-8 hover:bg-gray-50/50 transition">
+              <div className="border-b border-stone-100 p-8 hover:bg-stone-50/60 transition">
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <h3 className="text-xl font-medium text-gray-900 mb-2">
@@ -148,7 +148,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="border-b border-gray-100 p-8 hover:bg-gray-50/50 transition">
+              <div className="border-b border-stone-100 p-8 hover:bg-stone-50/60 transition">
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <h3 className="text-xl font-medium text-gray-900 mb-2">
@@ -163,27 +163,27 @@ function App() {
                 </div>
               </div>
 
-              <div className="border-b border-gray-100 p-8 bg-gray-900 text-white hover:bg-gray-800 transition relative">
+              <div className="border-b border-stone-100 p-8 bg-slate-700 text-white hover:bg-slate-600 transition relative">
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <div className="flex items-center gap-2 mb-2">
                       <h3 className="text-xl font-medium">
                         {t.services.wellness.name}
                       </h3>
-                      <span className="bg-white text-gray-900 px-2 py-0.5 rounded-full font-medium text-[10px] uppercase tracking-wider">
+                      <span className="bg-amber-500/90 text-slate-900 px-2 py-0.5 rounded-full font-medium text-[10px] uppercase tracking-wider">
                         {t.services.wellness.popular}
                       </span>
                     </div>
-                    <p className="text-sm text-gray-300 leading-relaxed max-w-2xl">{t.services.wellness.desc}</p>
+                    <p className="text-sm text-slate-300 leading-relaxed max-w-2xl">{t.services.wellness.desc}</p>
                   </div>
                   <div className="text-right ml-6 flex-shrink-0">
                     <div className="text-2xl font-light">{t.services.wellness.price}</div>
-                    <div className="text-sm text-gray-400 mt-1">{t.services.wellness.time}</div>
+                    <div className="text-sm text-slate-400 mt-1">{t.services.wellness.time}</div>
                   </div>
                 </div>
               </div>
 
-              <div className="p-8 hover:bg-gray-50/50 transition">
+              <div className="p-8 hover:bg-stone-50/60 transition">
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <h3 className="text-xl font-medium text-gray-900 mb-2">
@@ -220,14 +220,14 @@ function App() {
               href="https://booking.carelbl.at/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-10 py-4 bg-gray-900 text-white rounded-full font-medium hover:bg-gray-800 transition text-lg"
+              className="inline-flex items-center justify-center px-10 py-4 bg-slate-700 text-white rounded-full font-medium hover:bg-slate-600 transition text-lg"
             >
               {t.booking.button}
             </a>
           </div>
         </section>
 
-        <section id="contact" className="py-16 bg-gray-50">
+        <section id="contact" className="py-16 bg-stone-50">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div>
@@ -251,7 +251,7 @@ function App() {
                     <h3 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-medium">
                       {t.contact.phone}
                     </h3>
-                    <a href="tel:+4317108625" className="text-lg text-gray-900 hover:text-gray-600 transition">
+                    <a href="tel:+4317108625" className="text-lg text-amber-700 hover:text-amber-800 font-medium transition">
                       01 710 86 25
                     </a>
                   </div>
@@ -268,7 +268,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="bg-gray-200 rounded-2xl overflow-hidden h-[500px]">
+              <div className="bg-stone-200 rounded-2xl overflow-hidden h-[500px]">
                 <iframe
                   src="https://www.google.com/maps?q=48.21,16.379833&z=18&output=embed"
                   width="100%"
@@ -285,7 +285,7 @@ function App() {
         </section>
       </main>
 
-      <footer className="bg-white border-t border-gray-200 py-16">
+      <footer className="bg-white border-t border-stone-200 py-16">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-start gap-8">
             <div className="flex items-center flex-shrink-0">
